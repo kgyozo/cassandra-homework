@@ -20,7 +20,7 @@ CREATE table invoice
   line_id int,
   article_name text,
   article_price decimal,
-  PRIMARY KEY (invoice_id, line_id, article_name)
+  PRIMARY KEY (invoice_id, article_name, line_id)
 );
 
 CREATE INDEX ON invoice(invoice_date);
